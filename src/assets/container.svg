@@ -1,0 +1,32 @@
+<svg width="106" height="112" viewBox="0 0 106 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_1_342)">
+<rect y="5.46387" width="105.575" height="105.575" rx="24" fill="#F4BD38"/>
+</g>
+<rect x="3" y="8.46387" width="99.5749" height="99.5749" rx="21" stroke="#A7A3A3" stroke-width="6"/>
+<g filter="url(#filter1_i_1_342)">
+<rect width="105.575" height="105.575" rx="24" fill="#F4BD38"/>
+</g>
+<rect x="3" y="3" width="99.5749" height="99.5749" rx="21" stroke="#363636" stroke-width="6"/>
+<defs>
+<filter id="filter0_i_1_342" x="0" y="5.46387" width="105.575" height="110.575" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1_342"/>
+<feOffset dy="5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_342"/>
+</filter>
+<filter id="filter1_i_1_342" x="0" y="0" width="105.575" height="110.575" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6" operator="erode" in="SourceAlpha" result="effect1_innerShadow_1_342"/>
+<feOffset dy="5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_1_342"/>
+</filter>
+</defs>
+</svg>
