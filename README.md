@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+# Assignment for CodeRoof
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Design Preferences
 
-Currently, two official plugins are available:
+In my design strategy for this project, I've consciously opted to primarily employ pixel values (px) for defining CSS properties such as width, height, margin, and padding. While CSS provides a range of units like percentages (%), ems (em), and rems (rem), I've chosen pixels for their simplicity and precision.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pixel values offer me fine-grained control over layout and styling, crucial for achieving exactness in design. This meticulous control ensures consistency and accuracy across various screen sizes and resolutions, enhancing the user experience.
 
-## Expanding the ESLint configuration
+However, it's important to acknowledge that while pixels excel in achieving pixel-perfect designs, they may not always be the most adaptable, especially when designs need to dynamically adjust to different screen dimensions. In such scenarios, I'm open to integrating relative units like percentages, ems, or rems.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+My preference for pixel values reflects a balanced approach, aiming to deliver both a visually appealing and functionally robust user interface while remaining adaptable when needed.
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Running Vite React Project Locally
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This guide will help you set up and run a Vite React project on your local machine.
+
+## Prerequisites
+
+Before you begin, ensure that you have the following installed on your system:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (version 6 or higher)
+
+## Installation
+
+1. Clone the repository or download the project files to your local machine.
+
+2. Open a terminal and navigate to the project's root directory.
+
+3. Run the following command to install the project dependencies:
+
+   ```
+   npm install
+   ```
+
+   This will download and install all the necessary packages and libraries required for the project.
+
+## Running the Development Server
+
+1. In the terminal, make sure you are in the project's root directory.
+
+2. Run the following command to start the development server:
+
+   ```
+   npm run dev
+   ```
+
+   This command will start the Vite development server and compile your React application.
+
+3. Once the server is running, you will see output similar to the following:
+
+   ```
+   VITE v5.2.11  ready in 133 ms
+
+    ➜  Local:   http://localhost:5173/
+    ➜  Network: use --host to expose
+    ➜  press h + enter to show help
+   ```
+
+4. Open a web browser and visit `http://localhost:5173` to see your React application running locally.
+
+   The development server supports hot module replacement (HMR), so any changes you make to the source code will be automatically reflected in the browser without requiring a manual refresh.
