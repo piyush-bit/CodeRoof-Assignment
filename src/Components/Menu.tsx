@@ -1,4 +1,3 @@
-import React from 'react'
 
 function Menu({name,isActive}: {name: string,isActive: boolean}) {
     return (

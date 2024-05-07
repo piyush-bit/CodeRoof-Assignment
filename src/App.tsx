@@ -5,122 +5,126 @@ function App() {
 
   const cards = [{
     title: 'Sunday Morning',
-    src : '/C1.png'
-    
+    src: '/C1.png'
+
   },
   {
     title: 'Golden Age',
-    src : '/C2.png'
+    src: '/C2.png'
   },
   {
     title: 'Bronze Age',
-    src : '/C3.png'
+    src: '/C3.png'
   },
   {
     title: 'Dark Age',
-    src : '/C4.png',
-    text : "STANDARD"
+    src: '/C4.png',
+    text: "STANDARD"
   },
   {
     title: 'Mordern Age',
-    src : '/C5.png',
-    text : "STANDARD"
+    src: '/C5.png',
+    text: "STANDARD"
   },
   {
     title: 'Photorealistic',
-    src : '/C6.png',
-    text : "STANDARD"
+    src: '/C6.png',
+    text: "STANDARD"
   },
   {
     title: 'Anime',
-    src : '/C7.png',
-    text : "PRO"
+    src: '/C7.png',
+    text: "PRO"
   },
- 
+
   {
     title: 'Chibi',
-    src : '/C8.png',
-    text : "PRO"
+    src: '/C8.png',
+    text: "PRO"
   },
   {
     title: 'Fairy Tail',
-    src : '/C9.png',
-    text : "PRO"
+    src: '/C9.png',
+    text: "PRO"
   },
-]
+  ]
 
-const artStyles = [
-  {
-    title: 'Starry Night',
-    src : '/A1.png',
-    
-  },
-  {
-    title: 'Water Lills',
-    src : '/A2.png',
-    text : "STANDARD"
-  },
-  {
-    title: 'Art Naueau',
-    src : '/A3.png',
-    text : "STANDARD"
-  },
-  {
-    title: 'NightHawks',
-    src : '/A4.png',
-    text : "PRO" 
-  },
-  {
-    title: 'Italian Masters',
-    src : '/A5.png',
-    text : "PRO" 
-  },
-  {
-    title: 'PhotoJournalism',
-    src : '/A6.png',
-    text : "PRO" 
-  },
-  {
-    title: 'Afropop',
-    src : '/C7.png',
-    text : "PRO" 
-  },
-  {
-    title: 'Manga X watercolor',
-    src : '/C8.png',
-    text : "PRO"
-  },
-  {
-    title: 'Poliical',
-    src : '/C9.png',
-    text : "PRO"
-  },
-]
+  const artStyles = [
+    {
+      title: 'Starry Night',
+      src: '/A1.png',
 
-const menu = {
-  active : "Style",
-  options : ["Avatar","Style","Character","Write", "Illustrate","Publish" ]
-}
+    },
+    {
+      title: 'Water Lills',
+      src: '/A2.png',
+      text: "STANDARD"
+    },
+    {
+      title: 'Art Naueau',
+      src: '/A3.png',
+      text: "STANDARD"
+    },
+    {
+      title: 'NightHawks',
+      src: '/A4.png',
+      text: "PRO"
+    },
+    {
+      title: 'Italian Masters',
+      src: '/A5.png',
+      text: "PRO"
+    },
+    {
+      title: 'PhotoJournalism',
+      src: '/A6.png',
+      text: "PRO"
+    },
+    {
+      title: 'Afropop',
+      src: '/C7.png',
+      text: "PRO"
+    },
+    {
+      title: 'Manga X watercolor',
+      src: '/C8.png',
+      text: "PRO"
+    },
+    {
+      title: 'Poliical',
+      src: '/C9.png',
+      text: "PRO"
+    },
+  ]
+
+  const menu = {
+    active: "Style",
+    options: ["Avatar", "Style", "Character", "Write", "Illustrate", "Publish"]
+  }
 
 
   return (
     <>
-      <nav className="flex w-full px-6 py-4 ">
-        <div className="w-[210px] h-[130px] relative">
-          <img className="w-[202px] absolute " src="/Logo.png" alt="" />
-          <div className="absolute bottom-[24px] right-0 ">
-            <div className="text-[30px] text-white font-garet-heavy">inktron</div>
-            <div className="text-[17px] text-white font-garet tracking-[10px] -mt-[16px]">comics</div>
+      <nav className="flex flex-wrap gap-4 md:grid grid-cols-3 px-6 py-4 mb-8 text-white items-center">
+
+        <div className="flex items-center">
+          <div className="w-[210px] h-[130px] relative -mb-6">
+            <img className="w-[202px] absolute " src="/Logo.png" alt="" />
+            <div className="absolute bottom-[24px] right-0 ">
+              <div className="text-[30px] font-garet-heavy">inktron</div>
+              <div className="text-[17px] font-garet tracking-[10px] -mt-[16px]">comics</div>
+            </div>
           </div>
-        </div>
-        <div className="flex gap-6 h-full items-center text-white w-full">
           <a href="" className="text-[24px] font-garet-heavy mr-auto px-4">STYLE</a>
-          <div className="flex gap-[10%] justify-center flex-grow">
-            <a href="" className="font-glacial text-[20px]">Mission</a>
-            <a href="" className="font-glacial text-[20px]">FAQ</a>
-            <a href="" className="font-glacial text-[20px]">Pricing</a>
-          </div>
-          <div>
+        </div>
+
+        <div className="flex gap-[10%] justify-center flex-grow py-4">
+          <a href="" className="font-glacial text-[20px]">Mission</a>
+          <a href="" className="font-glacial text-[20px]">FAQ</a>
+          <a href="" className="font-glacial text-[20px]">Pricing</a>
+        </div >
+        <div className="md:flex justify-end gap-4 hidden">
+        <div className="flex items-center">
             <div className="flex flex-col items-center gap-2">
               <p className="text-[23px] font-garet-heavy font-black uppercase tracking-widest leading-6 text-center">
                 Upgrade
@@ -137,6 +141,7 @@ const menu = {
           <div className="h-[90px] w-[90px] bg-[#F4BD38] rounded-full p-1">
             <img src="/ProfilePicture.png" alt="" />
           </div>
+
         </div>
       </nav>
 
@@ -172,17 +177,17 @@ const menu = {
 
         </div>
       </section>
-      <section className="h-10 w-full  px-6 mb-3 mt-3">
-          <div className="h-full w-full flex ">
-            {menu.options.map((option,i)=>{
-              return(
-                <>
+      <section className="hidden md:block h-10 w-full  px-6 mb-3 mt-3">
+        <div className="h-full w-full flex ">
+          {menu.options.map((option, i) => {
+            return (
+              <>
                 <Menu name={option} isActive={menu.active === option} />
-                {i !== menu.options.length - 1 && <div className={`w-[40px] h-full flex-grow -mx-[40px] ${i<=menu.options.indexOf(menu.active)?"bg-[#F4BD38]":"bg-[#848484]"} `}></div>}
-                </>
-              )
-            })}
-          </div>
+                {i !== menu.options.length - 1 && <div className={`w-[40px] h-full flex-grow -mx-[40px] ${i <= menu.options.indexOf(menu.active) ? "bg-[#F4BD38]" : "bg-[#848484]"} `}></div>}
+              </>
+            )
+          })}
+        </div>
       </section>
       <section className="w-full px-4 py-4 ">
         <div className="flex flex-wrap justify-center">
@@ -197,16 +202,16 @@ const menu = {
         <div className="absolute w-screen h-ful pt-[40px] pb-[130px] pl-[90px] pr-[55px]">
           <div className="h-full w-full">
 
-          <p className="text-[40px] text-end font-garet-heavy font-black uppercase tracking-wider leading-6 mr-[30px] pt-[22px] pb-[2px] truncate hyphens-auto ">
-            Extra Art Style
-          </p>
-          <div className="flex px-[2.04%] pt-[28px] flex-wrap h-[360px] overflow-hidden justify-end">
-            {artStyles.map((style) => (
-              <Cards title={style.title} src={style.src} text={style.text} darkbtn={true} />
-            ))}
+            <p className="text-[40px] text-end font-garet-heavy font-black uppercase tracking-wider leading-6 mr-[30px] pt-[22px] pb-[2px] truncate hyphens-auto ">
+              Extra Art Style
+            </p>
+            <div className="flex px-[2.04%] pt-[28px] flex-wrap h-[360px] overflow-hidden justify-end">
+              {artStyles.map((style) => (
+                <Cards title={style.title} src={style.src} text={style.text} darkbtn={true} />
+              ))}
+            </div>
           </div>
-          </div>
-          
+
         </div>
         <img className="w-full h-[590px]" src="/Background_shape.png" alt="" />
       </section>
