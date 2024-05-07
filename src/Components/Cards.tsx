@@ -9,7 +9,7 @@ function Cards(props: props) {
     // Component that renders a card with a button
     return (
         <div className="-mx-2 flex flex-col items-center">
-            <div className="bg-white p-2 w-fit relative ">
+            <div className="bg-white p-2 w-fit relative cursor-pointer ">
                 <div className="relative overflow-hidden">
                     {/* Optional text overlay */}
                     {props.text && (

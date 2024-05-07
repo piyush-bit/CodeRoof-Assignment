@@ -110,7 +110,7 @@ function App() {
         {/* Logo and navigation links */}
         <div className="flex items-center">
           {/* Logo */}
-          <div className="w-[210px] h-[130px] relative -mb-6">
+          <div className="w-[210px] h-[130px] relative -mb-6 cursor-pointer">
             <img className="w-[202px] absolute" src="/Logo.png" alt="" />
             {/* Text under the logo */}
             <div className="absolute bottom-[24px] right-0 ">
@@ -131,7 +131,7 @@ function App() {
 
         {/* Pro upgrade button for large screens */}
         <div className="md:flex justify-end gap-4 hidden">
-          <div className="flex items-center">
+          <div className="flex items-center cursor-pointer">
             <div className="flex flex-col items-center gap-2">
               <p className="text-[23px] font-garet-heavy font-black uppercase tracking-widest leading-6 text-center">
                 Upgrade
@@ -141,11 +141,11 @@ function App() {
               <img className="h-1" src="/YellowDash.png" alt="" />
             </div>
           </div>
-          <div className="relative flex items-center justify-center w-[70px] h-[70px]">
+          <div className="relative flex items-center justify-center w-[70px] h-[70px] cursor-pointer">
             <img className="h-[70px] absolute" src="/Coin.png" alt="" />
             <p className="z-10 text-[22px] font-glacial text-[#474747] font-semibold">1000</p>
           </div>
-          <div className="h-[90px] w-[90px] bg-[#F4BD38] rounded-full p-1">
+          <div className="h-[90px] w-[90px] bg-[#F4BD38] rounded-full p-1 cursor-pointer">
             <img src="/ProfilePicture.png" alt="" />
           </div>
         </div>
@@ -169,28 +169,28 @@ function App() {
           <img className="w-[80px]" src="/Robot.png" alt="" />
         </div>
         {/* Heading */}
-        <div className="text-[30px] text-white uppercase text-center font-glacial tracking-widest">
+        <div className="text-[30px] text-white uppercase text-center font-glacial tracking-widest cursor-pointer">
           Project Tittle #1
         </div>
         {/* Cards */}
         <div className="flex gap-4 items-center justify-end ">
           {/* Container */}
           <div
-            className="w-[105px] h-[110px] flex items-center justify-center "
+            className="w-[105px] h-[110px] flex items-center justify-center cursor-pointer "
             style={{ backgroundImage: "url('/container.svg')" }}
           >
             <img className="h-[80px]" src="/Rocket.png" alt="" />
           </div>
           {/* Container */}
           <div
-            className="w-[105px] h-[110px] flex items-center justify-center "
+            className="w-[105px] h-[110px] flex items-center justify-center cursor-pointer"
             style={{ backgroundImage: "url('/container.svg')" }}
           >
             <img className="invert h-[75px]" src="Robot.png" alt="" />
           </div>
           {/* Container */}
           <div
-            className="w-[105px] h-[110px] flex items-center justify-center "
+            className="w-[105px] h-[110px] flex items-center justify-center cursor-pointer"
             style={{ backgroundImage: "url('/container.svg')" }}
           >
             <img className="w-[75px]" src="/Pencil.png" alt="" />
